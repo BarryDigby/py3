@@ -4,8 +4,8 @@ LABEL authors="Barry Digby" \
 
 WORKDIR ./
 COPY environment.yml ./
-RUN conda env create -f week1.yml && conda clean -a
-ENV PATH /opt/conda/envs/week1/bin:$PATH
+RUN conda env create -f environment.yml && conda clean -a
+ENV PATH /opt/conda/envs/py3/bin:$PATH
 
 #DCC
 WORKDIR /usr/src/app
